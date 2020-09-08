@@ -9,11 +9,6 @@ https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/
 
 import os
 
-from dotenv import load_dotenv
-
-catcollector = os.path.expanduser('/Users/monty/Django-is-a-Thing/catcollector/catcollector')
-load_dotenv(os.path.join(catcollector, '.env'))
-
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'catcollector.settings')
